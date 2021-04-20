@@ -248,6 +248,8 @@ var _ = ginkgo.Describe("OVN Namespace Operations", func() {
 				gomega.Expect(err).To(gomega.HaveOccurred())
 				gomega.Expect(s).To(gomega.BeNil())
 
+				gomega.Expect(true).To(gomega.BeFalse())
+
 				return nil
 			}
 
